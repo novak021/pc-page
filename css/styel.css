@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+#menu-hamburguer {
+    display: none;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.icon-logo {
+    font-size: 1.56rem;
+    color: #ff2f2f;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #fc4242;
+}
+
+#localization {
+    border: 1px solid #fc4242;
+    border-radius: 1.5rem;
+    padding: .6rem;
+    text-decoration: none;
+    color: #000;
+}
+
+#localization:hover {
+    background: #fc4242;
+    color: #fff;
+}
+
+#about-container {
+    background: #fff url(../img/mark-farias-V_MdomV6Kbg-unsplash.jpg) center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#about {
+    max-width:650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+#about h1 {
+    font-size: 2.2rem;
+    color: #f3f3f3;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    margin-bottom: 1.5rem;
+}
+
+#ligue-para {
+    color: #f3f3f3;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border: 2px solid #f3f3f3;
+    border-radius: 1rem;
+    padding: .6rem;
+    margin-bottom: 1.5rem;
+}
+
+#ligue-para:hover {
+    background: #f3f3f3;
+    color: #000;
+}
+
+#btn {
+    font-size: 1.4rem;
+    color: #fff;
+    background: #18bd18;
+    border: none;
+    border-radius: 2rem;
+    padding: .6rem;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: #14ac14;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    #menu-hamburguer {
+        display: block;
+    }
+
+    nav, #localization {
+        display: none;
+    }
+
+    #about {
+        width: 100%;
+    }
+    
+}
